@@ -1,7 +1,4 @@
-#include <mpi/mpi.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "lab2.h"
 
 int main(int argc, char *argv[]) {
     int id, num_procs;

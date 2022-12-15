@@ -1,7 +1,4 @@
-#include <mpi/mpi.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "lab2.h"
 
 #define BUF_SIZE 256
 
