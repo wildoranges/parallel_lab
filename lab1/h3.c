@@ -2,6 +2,7 @@
 
 int loop1() {
     //不能并行
+    printf("loop1 cannot be parallelized\n");
     return 1;
 }
 
@@ -44,6 +45,7 @@ int loop2() {
             DD[i][j] = DD[i][j-1] + x;
         }
     }
+    z = y + 4;
 
     return memeq(A, AA) && memeq(C, CC) && memeq(D, DD);
 }

@@ -12,7 +12,6 @@ int main(int argc, char *argv[]) {
 
     int recv_data;
     MPI_Status status;
-    int layer = 1;
 
     printf("proc id %d, init data = %d\n", id, sum);
 
@@ -32,6 +31,7 @@ int main(int argc, char *argv[]) {
             MPI_Recv(&sum, 1, MPI_INT, id - (i >> 1), i, MPI_COMM_WORLD, &status);
         }
     }
+    MPI_Barrier(MPI_COMM_WORLD);
 
     printf("proc id %d, sum = %d\n", id, sum);
 

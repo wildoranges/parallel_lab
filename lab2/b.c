@@ -23,6 +23,7 @@ int main(int argc, char *argv[]) {
         sum += recv_data;
         printf("layer %d, proc id %d, recv %d from proc %d, sum = %d\n", layer++, id, recv_data, dest, sum);
     }
+    MPI_Barrier(MPI_COMM_WORLD);
 
     printf("proc id %d, sum = %d\n", id, sum);
 
