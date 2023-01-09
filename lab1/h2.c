@@ -28,13 +28,13 @@ int loop1() {
 int loop2() {
     const int N = 20;
     int X[102];
-    int Y[102];
+    int Y[202];
     int A[102][102];
     int B[102];
     int C[102][102];
 
     int XX[102];
-    int YY[102];
+    int YY[202];
     int AA[102][102];
     int BB[102];
     // int CC[102][102];
